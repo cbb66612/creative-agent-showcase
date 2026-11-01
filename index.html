@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f8f5fc">
+  <meta name="description" content="麦香冰制作的 AI 创作资源与 Agent 项目展示，浏览、检索和复制 Skill 与提示词。">
+  <title>灵感引擎 · Skill、预设与 Agent 项目展示</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <div class="page-glow" aria-hidden="true"></div>
+  <header class="site-header shell">
+    <a class="brand" href="#top" aria-label="灵感引擎首页"><span class="brand-mark">✦</span><span>灵感引擎<span class="brand-dot">.</span></span></a>
+    <nav aria-label="主导航"><a class="nav-active" href="#browse">探索资源</a><a href="#about">关于这个项目</a></nav>
+    <a class="header-link" href="https://github.com/cbb66612" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+  </header>
+
+  <main id="top">
+    <section class="hero shell" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="pulse"></span> SKILL · PRESET · AGENT <span class="eyebrow-line"></span> 2026</div>
+        <h1 id="hero-title">让每一个<span>灵感</span><br>都有迹可循<span class="period">.</span></h1>
+        <p>一个可自由探索的 AI 创作资源目录。找到合适的提示词与 Skill，打开详情，复制内容，让想法更快开始。</p>
+        <div class="hero-actions"><a class="button button-primary" href="#browse">开始探索 <span aria-hidden="true">↗</span></a><a class="button button-quiet" href="#about">了解项目 <span aria-hidden="true">→</span></a></div>
+        <div class="hero-stats"><div><strong id="hero-total">—</strong><span>份可浏览资源</span></div><i></i><div><strong id="hero-presets">—</strong><span>条创作预设</span></div><i></i><div><strong id="hero-skills">—</strong><span>个 Skill</span></div></div>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div class="art-spark spark-one">✦</div><div class="art-spark spark-two">✧</div>
+        <div class="float-card float-card-back"><span class="float-icon">◈</span><span>灵感正在汇聚</span><b>02 / 03</b></div>
+        <div class="float-card float-card-main"><div class="card-topline"><span class="mini-dot"></span><span>CREATIVE NOTE / 001</span><span>↗</span></div><div class="art-symbol">✳</div><strong>从想法<br>到作品。</strong><div class="card-bottomline"><span>EXPLORE · CREATE · REPEAT</span><span>✦</span></div></div>
+        <div class="float-card float-card-front"><span>✦</span><div><strong>找到下一个创作起点</strong><small>Scroll to explore</small></div><span>↗</span></div>
+      </div>
+    </section>
+
+    <section class="browse-section" id="browse" aria-labelledby="browse-title">
+      <div class="shell">
+        <div class="section-intro"><div><span class="section-kicker">THE COLLECTION / 资源目录</span><h2 id="browse-title">探索你的下一个<span>灵感</span></h2></div><p>按类型、来源与分类筛选，也可以直接搜索。<br>点击资源卡片查看完整内容。</p></div>
+        <div class="browse-toolbar">
+          <label class="search"><span aria-hidden="true">⌕</span><input id="search-input" type="search" placeholder="搜索名称、分类、简介或正文…" autocomplete="off"><kbd>/</kbd></label>
+          <div class="filters"><select id="source-filter" aria-label="按来源筛选"><option value="all">全部来源</option><option value="ext">外部资源</option><option value="tv">TV</option></select><select id="category-filter" aria-label="按分类筛选"><option value="all">全部分类</option></select></div>
+        </div>
+        <div class="result-bar"><div class="type-tabs" role="group" aria-label="资源类型"><button class="active" data-kind="all" type="button">全部</button><button data-kind="preset" type="button">预设</button><button data-kind="skill" type="button">Skill</button></div><p id="result-count" aria-live="polite">正在加载资源…</p></div>
+        <div id="resource-grid" class="resource-grid" aria-live="polite"></div>
+        <div id="empty-state" class="empty-state" hidden><span>✳</span><h3>暂时没有找到匹配的资源</h3><p>换个关键词，或试试其他分类。</p><button id="reset-filters" class="button button-primary" type="button">清除筛选</button></div>
+        <div class="pagination"><button id="prev-page" type="button" aria-label="上一页">←</button><span id="page-info">—</span><button id="next-page" type="button" aria-label="下一页">→</button></div>
+      </div>
+    </section>
+
+    <section class="about shell" id="about"><div class="about-symbol" aria-hidden="true">✦</div><div><span class="section-kicker">ABOUT THE PROJECT / 关于项目</span><h2>从资源整理，到 Agent 辅助创作。</h2><p>这是麦香冰制作的个人项目展示网站。原始系统包含 Skill、预设资源库和内置 Agent，可检索资源、打开详情、查看分类与统计。当前公开站提供资源浏览与复制；Agent 对话需要原系统的服务端与模型配置，暂未开放在线体验。</p></div><a class="button button-light" href="#browse">继续探索 ↗</a></section>
+  </main>
+
+  <footer class="site-footer shell"><a class="brand" href="#top"><span class="brand-mark">✦</span><span>灵感引擎<span class="brand-dot">.</span></span></a><span>Created by 麦香冰 · 2026</span><a href="#top">回到顶部 ↑</a></footer>
+
+  <dialog id="detail-dialog" aria-labelledby="detail-title"><div class="dialog-shell"><div class="dialog-header"><span class="dialog-kicker">RESOURCE DETAIL / 资源详情</span><button id="close-dialog" type="button" aria-label="关闭详情">×</button></div><div id="detail-cover" class="detail-cover"></div><div id="detail-meta" class="detail-meta"></div><h2 id="detail-title"></h2><p id="detail-summary" class="detail-summary"></p><div class="detail-body-head"><span>完整内容</span><button id="copy-body" type="button">复制内容 ↗</button></div><pre id="detail-body"></pre><div id="detail-source" class="detail-source"></div></div></dialog>
+</body>
+</html>

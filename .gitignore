@@ -1,0 +1,15 @@
+server/data/
+server/runtime/
+server/__pycache__/
+server/**/*.pyc
+server/lsdb_grab/
+server/screenshots/
+server/staging/
+server/logs/
+server/chrome-tv*/
+*.db-wal
+*.db-shm
+*.log
+.env
+.env.*
+__pycache__/
