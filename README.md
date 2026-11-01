@@ -4,6 +4,20 @@
 
 **[打开公开展示页](https://cbb66612.github.io/creative-agent-showcase/)** · 在线可浏览、筛选、查看详情和复制公开资源。GitHub Pages 不能运行 Python；Agent 对话、账号管理、上传和统计需要运行仓库中的完整应用。
 
+![AI 创作资源工作台的公开首页](assets/showcase/home.png)
+
+## 界面预览
+
+以下均为公开展示页的实际截图，使用的资源来自已过滤 Flow Skill 的公开快照。
+
+**搜索与筛选：**按“三视图”搜索，找到相关预设和 Skill。
+
+![搜索三视图的资源结果](assets/showcase/search.png)
+
+**详情与复制：**打开一条预设，查看完整正文和复制入口。
+
+![三视图预设的详情页面](assets/showcase/detail.png)
+
 ## 具体功能
 
 | 功能 | 公开展示页 | 完整 Python 应用 |
