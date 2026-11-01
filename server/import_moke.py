@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""把「镜库」抓取数据（catalog.json）导入灵感引擎 Skill 预设库。
+"""把「镜库」抓取数据（catalog.json）导入创作资源工作台 Skill 预设库。
 
 用法：
     python import_moke.py                 # 导入默认位置的数据

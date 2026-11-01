@@ -706,7 +706,7 @@ def init_storage(verbose=True):
             pw = secrets.token_urlsafe(18)
             create_user(conn, "demo_admin", "管理员", pw, role="admin", can_maintain=1)
             lines = [
-                "灵感引擎 · Skill 预设库 —— 初始账号",
+                "创作资源工作台 · Skill 预设库 —— 初始账号",
                 "",
                 "管理员账号：demo_admin",
                 "初始密码：%s" % pw,

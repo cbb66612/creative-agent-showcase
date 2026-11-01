@@ -73,7 +73,7 @@
 
     var head = el('div', 'bothead');
     head.appendChild(el('span', 'mark', '剧'));
-    head.appendChild(el('span', 'name', '灵感引擎 Agent'));
+    head.appendChild(el('span', 'name', '创作资源工作台 Agent'));
     if (res.mode === 'agent') head.appendChild(el('span', 'pill ok', '工具调用'));
     body.appendChild(head);
 

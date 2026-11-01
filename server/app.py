@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""灵感引擎 · Skill 预设库 —— 局域网版（零依赖，Python 3.10+）。
+"""创作资源工作台 · Skill 预设库 —— 局域网版（零依赖，Python 3.10+）。
 
 在本机运行 app.py 后用浏览器访问
 http://本机内网IP:8000 ，登录后即可浏览、上传、下载。
@@ -104,7 +104,7 @@ def topbar(user, active):
         '<header class="topbar"><div class="wrap topbar-in">'
         '<a class="brand" href="/">'
         '<span class="brand-mark">剧</span>'
-        '<span class="brand-text"><span class="brand-name">灵感引擎 Skill 预设库</span>'
+        '<span class="brand-text"><span class="brand-name">创作资源工作台 Skill 预设库</span>'
         '<span class="brand-sub">Skill · 预设 · Agent</span></span></a>'
         '<nav class="nav">%s</nav>'
         '<div class="topbar-right">%s'
@@ -173,15 +173,15 @@ MOTION_JS = (
 )
 
 AI_PANEL = (
-    '<div class="ai-fab" id="ai-fab" role="button" tabindex="0" aria-label="灵感引擎小助手" '
+    '<div class="ai-fab" id="ai-fab" role="button" tabindex="0" aria-label="创作资源工作台小助手" '
     'title="点我问问题 · 按住可以拖到任意位置">'
     '<img src="/static/kitty.png?v=2" alt="小助手"></div>'
     '<div class="ai-panel" id="ai-panel" hidden>'
-    '<div class="ai-head"><div><b>灵感引擎助手</b>'
+    '<div class="ai-head"><div><b>创作资源工作台助手</b>'
     '<span>基于库内资源回答 · 会标注来源</span></div>'
     '<button class="ai-x" id="ai-close" title="关闭">×</button></div>'
     '<div class="ai-body" id="ai-body">'
-    '<div class="ai-msg bot"><p>我是灵感引擎助手。可以帮你找资源、解释 Skill 规则、'
+    '<div class="ai-msg bot"><p>我是创作资源工作台助手。可以帮你找资源、解释 Skill 规则、'
     '按你的需求挑预设。回答只依据库里的内容，并标注来源。</p></div></div>'
     '<form class="ai-form" id="ai-form">'
     '<input id="ai-input" placeholder="例如：有没有生成角色三视图的预设？" autocomplete="off">'
@@ -252,8 +252,8 @@ def shell(title, body, user=None, active="", head_extra=""):
         '<meta name="viewport" content="width=device-width, initial-scale=1">'
         '<meta http-equiv="Cache-Control" content="no-store, must-revalidate">'
         '<meta http-equiv="Pragma" content="no-cache">'
-        '<title>%s · 灵感引擎</title>%s</head><body>%s<main id="app">%s</main>'
-        '<footer class="footer"><div class="wrap">灵感引擎 · Skill 预设库 · 个人项目展示 · '
+        '<title>%s · 创作资源工作台</title>%s</head><body>%s<main id="app">%s</main>'
+        '<footer class="footer"><div class="wrap">创作资源工作台 · Skill 预设库 · 个人项目展示 · '
         '文件保存在服务器 data/ 目录</div></footer>%s'
         '<script>'
         'document.addEventListener("click",function(e){'
@@ -730,7 +730,7 @@ def ext_skill_detail(conn, r, user):
 def page_login(msg="", err=""):
     body = (
         '<div class="wrap login-wrap">'
-        '<div class="login-hero"><div class="big">灵感引擎 · Skill 预设库</div>'
+        '<div class="login-hero"><div class="big">创作资源工作台 · Skill 预设库</div>'
         '<div class="sub">Skill · 预设 · Agent</div></div>'
         '<div class="panel"><div class="panel-body">'
         + ('<div class="err">%s</div>' % esc(err) if err else "")
@@ -1128,7 +1128,7 @@ def _agent_msg_html(m, open_steps=False):
             parts.append('<div class="line">%s</div>' % _inline_md(ln.strip()))
     lines = "".join(parts)
     return ('<div class="msg bot"><div class="bubble">'
-            '<div class="bothead"><span class="mark">剧</span><span class="name">灵感引擎 Agent</span>'
+            '<div class="bothead"><span class="mark">剧</span><span class="name">创作资源工作台 Agent</span>'
             '%s</div><div class="answer">%s</div>%s%s</div></div>'
             % ('<span class="pill ok">工具调用</span>' if steps else "",
                lines, _steps_html(steps, m["elapsed_ms"] or 0, open_steps), _sources_html(sources)))
@@ -2103,7 +2103,7 @@ def main():
         sys.exit(1)
     httpd.daemon_threads = True
     print("=" * 62)
-    print(" 灵感引擎 · Skill 预设库  已启动")
+    print(" 创作资源工作台 · Skill 预设库  已启动")
     print(" 本机访问：http://127.0.0.1:%d" % PORT)
     for ip in lan_ips():
         print(" 网络访问：http://%s:%d" % (ip, PORT))

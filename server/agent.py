@@ -120,7 +120,7 @@ def _t_stats(conn, args, user):
 TOOLS = [
     {
         "name": "search_library",
-        "description": "在灵感引擎资源库里按关键词搜索。库里有三类：Flow Skill（规则包 ZIP）、TV 预设（提示词）、镜库外部资源（6000+ 条提示词与 Skill 正文）。想知道库里有什么、找某个用途的资源时先调它。",
+        "description": "在创作资源工作台的公开资源库里按关键词搜索。库中包含 TV 预设与 Skill 正文，以及外部提示词和 Skill 正文。想知道库里有什么、找某个用途的资源时先调它。",
         "risk": "LOW",
         "need_confirm": False,
         "handler": _t_search,
@@ -148,7 +148,7 @@ TOOLS = [
     },
     {
         "name": "list_taxonomy",
-        "description": "列出库里的分类体系：Flow 的阶段与分类、TV 的功能与分类、镜库的分类。用户问「有哪些分类」「该传到哪里」时调用。",
+        "description": "列出当前资源库中的平台与分类。用户问「有哪些分类」「该传到哪里」时调用。",
         "risk": "LOW",
         "need_confirm": False,
         "handler": _t_taxonomy,
@@ -166,7 +166,7 @@ TOOLS = [
 
 _BY_NAME = {t["name"]: t for t in TOOLS}
 
-SYSTEM = """你是「灵感引擎 · Skill 预设库」里的内置 Agent，服务创作者，帮助他们检索和理解 Skill 与预设资源。
+SYSTEM = """你是「创作资源工作台 · Skill 预设库」里的内置 Agent，服务创作者，帮助他们检索和理解 Skill 与预设资源。
 
 你可以调用工具查库。规则：
 1. 涉及「库里有什么 / 某条资源写了什么 / 分类怎么分」时，先调工具，不要凭印象回答。
